@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Slack Activity",
+  "description": "Hides the Activity tab in Slack's sidebar",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://app.slack.com/*"],
+      "css": ["hide-activity.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

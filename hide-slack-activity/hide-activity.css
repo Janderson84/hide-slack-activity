@@ -1,0 +1,9 @@
+/* Hide Slack Activity tab */
+button[data-qa="activity"] {
+  display: none !important;
+}
+
+/* Fallback: hide by aria-label in case data-qa changes */
+button[aria-label="Activity"] {
+  display: none !important;
+}
